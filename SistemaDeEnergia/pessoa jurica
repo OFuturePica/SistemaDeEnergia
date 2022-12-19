@@ -1,0 +1,28 @@
+package sistemaenergia;
+
+public class PessoaJuridica  extends Cliente{
+	
+	 private String CNPJ;
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+	 
+	public String toString() {
+		String texto = "";
+			
+			texto = "----------------------------"
+					+"\n clienreid: " + getClienteid()
+					+"\n cpf: " + getCNPJ()
+					+"\n nome: " + getNome()
+					+"\n Endereço: " + getendereço();
+			
+			return texto;
+					
+		
+		}
+}
