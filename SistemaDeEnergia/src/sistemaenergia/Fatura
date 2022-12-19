@@ -109,8 +109,10 @@ case
 	
 	}
 
-      public void imprimirFatura(Fatura Vert[getfaruraid,getUnidadeConsumidora,getmesAno,getConsumo]){
+      public void imprimirFatura(Fatura Vert[getfaruraid,getUnidadeConsumidora,getmesAno,getConsumo,isPago]){
 
+
+            for
 
 
       }
