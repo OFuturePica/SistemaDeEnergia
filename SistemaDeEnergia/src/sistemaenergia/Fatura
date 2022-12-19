@@ -1,0 +1,121 @@
+package sistemaenergia;
+
+public class Fatura {
+      
+      private int faruraid;
+
+      private int mesAno;
+
+      private UC unidadeConsumidora;
+
+      private  int consumo;
+
+      private boolean pago;
+
+	public int getFaruraid() {
+		return faruraid;
+	}
+
+	public void setFaruraid(int faruraid) {
+		this.faruraid = faruraid;
+	}
+
+	public int getMesAno() {
+		return mesAno;
+	}
+
+	public void setMesAno(int mesAno) {
+		this.mesAno = mesAno;
+	}
+
+	public UC getUnidadeConsumidora() {
+		return unidadeConsumidora;
+	}
+
+	public void setUnidadeConsumidora(UC unidadeConsumidora) {
+		this.unidadeConsumidora = unidadeConsumidora;
+	}
+
+	public int getConsumo() {
+		return consumo;
+	}
+
+	public void setConsumo(int consumo) {
+		this.consumo = consumo;
+	}
+
+	public boolean isPago() {
+		return pago;
+	}
+
+	public void setPago(boolean pago) {
+		this.pago = pago;
+	}
+
+       public double  calculoValorFatura(){
+      
+      private double tarReciddencia1 =0.38790;
+      private double tarReciddencia2 =0.40500;
+      private double tarComercial1 =0.42550;
+      private double tarComercial2 =0.45113;
+      private double imcs= 27;
+      private double subT;
+      private double taxailuminaçãoPu= 7.8;
+
+
+switch (){
+
+case 
+ if(consumo <=200){
+
+            subT=(this.consumo*tarComercial1)+imcs+taxailumina;
+
+
+
+      }  else {
+
+            subT=(this.consumo*tarReciddencia2)+imcs+taxailumina;
+
+
+      }
+break;
+case
+
+      if(consumo <=500){
+
+            subT=(this.consumo*tarComercial1)+imcs+taxailumina;
+
+
+
+      }  else {
+
+            subT=(this.consumo*tarComercial2)+imcs+taxailumina;
+
+
+      }
+      break;
+}
+ public String toString() {
+	String texto = "";
+		
+		texto = "----------------------------"
+				+"\n Rua: " + getFaruraid()
+				+"\n Rua: " + getMesAno()
+				+"\n CEP: " + getUnidadeConsumidora()
+				+"\n Cidade: " + getConsumo();
+		
+		return texto;
+				
+	
+	}
+
+      public void imprimirFatura(Fatura Vert[getfaruraid,getUnidadeConsumidora,getmesAno,getConsumo]){
+
+
+
+      }
+
+
+      
+
+}

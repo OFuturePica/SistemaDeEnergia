@@ -4,7 +4,7 @@ public class Cliente {
 	
 	private int Clienteid;
 	private String nome;
-	private Endereco endereço;
+	private Endereco endereï¿½o;
 	
 	
 	public int getClienteid() {
@@ -19,12 +19,24 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Endereço getendereço() {
-		return Endereço;
+	public Endereï¿½o getendereï¿½o() {
+		return Endereï¿½o;
 	}
-	public void setEndereço(Endereço endereço) {
-		Endereço = endereço;
+	public void setEndereï¿½o(Endereï¿½o endereï¿½o) {
+		Endereï¿½o = endereï¿½o;
 	}
-	
+	public String toString() {
+		String texto = "";
+		
+		texto = "----------------------------"
+		        +"\n clirntrid: " + getClienteid()
+			    +"\n nome: " + getNome()
+				+"\n Rua: " + getRua()
+				+"\n numero: " + getNumero()
+				+"\n CEP: " + getCep()
+				+"\n Cidade: " + getCidade()
+				+"\n Estado: " + getEstado();
+		
+		return texto;
 
 }
