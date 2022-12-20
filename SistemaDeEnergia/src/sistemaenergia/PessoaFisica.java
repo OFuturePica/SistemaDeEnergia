@@ -20,6 +20,8 @@ public class PessoaFisica  extends Cliente{
 				+"\n Rua: " + getNumero()
 				+"\n CEP: " + getCep()
 				+"\n Cidade: " + getCidade()
+				"\n Cidade: " + getCPF()
+				"\n Cidade: " + getNome()
 				+"\n Estado: " + getEstado();
 		
 		return texto;
