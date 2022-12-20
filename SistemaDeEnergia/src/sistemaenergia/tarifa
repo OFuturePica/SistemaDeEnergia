@@ -1,0 +1,51 @@
+package sistemaenergia;
+
+public class tarifa {
+    private double tarReciddencia1 =0.38790;
+    private double tarComercial1 =0.42550;
+    private double tarReciddencia2 =0.38790;
+    private double tarComercial2 =0.42550;
+    private double imcs= 27;
+    private double taxailuminaçãoPu= 7.8;
+
+    public double getTarReciddencia1() {
+		return tarReciddencia1;
+	}
+	public void setTarReciddencia1(double tarReciddencia1) {
+		this.tarReciddencia1 = tarReciddencia1;
+	}
+	public double getTarComercial1() {
+		return tarComercial1;
+	}
+	public void setTarComercial1(double tarComercial1) {
+		this.tarComercial1 = tarComercial1;
+	}
+	public double getTarReciddencia2() {
+		return tarReciddencia2;
+	}
+	public void setTarReciddencia2(double tarReciddencia2) {
+		this.tarReciddencia2 = tarReciddencia2;
+	}
+	public double getTarComercial2() {
+		return tarComercial2;
+	}
+	public void setTarComercial2(double tarComercial2) {
+		this.tarComercial2 = tarComercial2;
+	}
+	public double getImcs() {
+		return imcs;
+	}
+	public void setImcs(double imcs) {
+		this.imcs = imcs;
+	}
+	public double getTaxailuminaçãoPu() {
+		return taxailuminaçãoPu;
+	}
+	public void setTaxailuminaçãoPu(double taxailuminaçãoPu) {
+		this.taxailuminaçãoPu = taxailuminaçãoPu;
+	}
+    
+}
+
+      
+

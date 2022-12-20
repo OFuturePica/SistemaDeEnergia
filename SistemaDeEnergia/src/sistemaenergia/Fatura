@@ -1,6 +1,6 @@
 package sistemaenergia;
 
-public class Fatura {
+public class Fatura extends tarifa {
       
       private int faruraid;
 
@@ -52,48 +52,27 @@ public class Fatura {
 		this.pago = pago;
 	}
 
-       public double  calculoValorFatura(){
+public double  calculoValorFatura(){
       
-      private double tarReciddencia1 =0.38790;
-      private double tarReciddencia2 =0.40500;
-      private double tarComercial1 =0.42550;
-      private double tarComercial2 =0.45113;
-      private double imcs= 27;
-      private double subT;
-      private double taxailuminaçãoPu= 7.8;
+      private double subTotal=0;
 
+    if(consumo <=200){
 
-switch (){
-
-case 
- if(consumo <=200){
-
-            subT=(this.consumo*tarComercial1)+imcs+taxailumina;
+            subTotal=(this.consumo*TarReciddencia2)+getImcs+getTaxailuminaçãoPu;
 
 
 
-      }  else {
+      }  else if (consumo >200 && consumo<=500){
 
-            subT=(this.consumo*tarReciddencia2)+imcs+taxailumina;
-
-
-      }
-break;
-case
-
-      if(consumo <=500){
-
-            subT=(this.consumo*tarComercial1)+imcs+taxailumina;
+            subTotal=(this.consumo* getTarComercial2)+getImcs+getTaxailuminaçãoPu;
 
 
+      } else{
+           System.out.println(".o.consumo.não.é.valido.");
 
-      }  else {
-
-            subT=(this.consumo*tarComercial2)+imcs+taxailumina;
+	  }
 
 
-      }
-      break;
 }
  public String toString() {
 	String texto = "";
@@ -109,10 +88,13 @@ case
 	
 	}
 
-      public void imprimirFatura(Fatura Vert[getfaruraid,getUnidadeConsumidora,getmesAno,getConsumo,isPago]){
+      public void imprimirFatura(Fatura Vert[]){
 
 
-            for
+
+
+
+            
 
 
       }
